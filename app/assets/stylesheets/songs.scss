@@ -3,6 +3,7 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 html {
   font-size: 2em;
+  scroll-behavior: smooth;
 }
 
 @media (min-width: 780px) {
@@ -60,17 +61,22 @@ body {
   flex-wrap: wrap;
   padding-top: $navbar-height;
   margin-top: -$navbar-height;
+  margin-bottom: 4.25rem;
 }
 
 .instructions {
   text-align: center;
+  margin-bottom: 1rem;
+  i {
+    font-size: 2rem;
+  }
 }
 
 .hidden {
   display: none;
 }
 
-.song-conatainer {
+.song-container {
   display: none;
   padding-bottom: 3rem;
   padding-top: $navbar-height;

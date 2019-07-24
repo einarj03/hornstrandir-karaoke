@@ -1,5 +1,9 @@
 <div class="page-content">
   <div class="page-container">
+    <div class="instructions">
+      <h2>Veldu lag til að sjá textan!</h2>
+      <i class="fas fa-hand-point-down"></i>
+    </div>
     <div class="song-buttons" id="anchor-songs">
       <% @songs.each do |song| %>
           <%= link_to "#anchor-#{song.id}", class: "btn btn-primary" do %>
@@ -8,22 +12,20 @@
       <% end %>
     </div>
 
-    <div class="instructions">
-      <i class="fas fa-hand-point-up"></i>
-      <h2>Velldu lag til að sjá textan!</h2>
-    </div>
 
     <% @songs.each do |song| %>
-      <div class="song-conatainer" id="anchor-<%= song.id %>">
+      <div class="song-container" id="anchor-<%= song.id %>">
         <div class="title">
           <h3>
             <i class="fas fa-compact-disc"></i>
             <%= song.title %>
           </h3>
-          <h4>
-            <i class="fas fa-microphone"></i>
-            <%= song.artist %>
-          </h4>
+          <% unless song.artist == "xx" %>
+            <h4>
+              <i class="fas fa-microphone"></i>
+              <%= song.artist %>
+            </h4>
+          <% end %>
         </div>
         <div class="lyrics-container">
           <div class="lyrics-icon-container">

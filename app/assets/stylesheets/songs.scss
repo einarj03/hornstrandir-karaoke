@@ -4,20 +4,29 @@
 body, html {
   margin: 0;
   padding: 0;
-  height: 100%;
   font-family: monospace;
   vertical-align: baseline;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  min-height: 100%;
 }
 
 .page-wrapper {
   position: relative;
   background-color: #f4f4f4;
+  min-height: 100vh;
 }
 
 .page-content {
   display: flex;
   justify-content: space-around;
   z-index: 0;
+  padding-bottom: 4rem;
 }
 
 .page-container {
@@ -41,6 +50,14 @@ body, html {
   display: flex;
   padding-top: 50px;
   margin-top: -50px;
+}
+
+.instructions {
+  text-align: center;
+}
+
+.hidden {
+  display: none;
 }
 
 .song-conatainer {

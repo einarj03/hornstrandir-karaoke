@@ -8,8 +8,13 @@
       <% end %>
     </div>
 
+    <div class="instructions">
+      <i class="fas fa-hand-point-up"></i>
+      <h2>Velldu lag til að sjá textan!</h2>
+    </div>
+
     <% @songs.each do |song| %>
-      <div class="song-conatainer selected" id="anchor-<%= song.id %>">
+      <div class="song-conatainer" id="anchor-<%= song.id %>">
         <div class="title">
           <h3>
             <i class="fas fa-compact-disc"></i>

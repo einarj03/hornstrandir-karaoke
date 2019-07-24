@@ -1,20 +1,17 @@
+<div class="page-content">
   <div class="page-container">
-    <h1>
-      Karaoke
-      <i class="fas fa-microphone"></i>
-    </h1>
-    <div class="song-buttons">
+    <div class="song-buttons" id="anchor-songs">
       <% @songs.each do |song| %>
-          <%= link_to "##{song.id}", class: "btn btn-primary" do %>
+          <%= link_to "#anchor-#{song.id}", class: "btn btn-primary" do %>
             <%= song.title %>
           <% end %>
       <% end %>
     </div>
 
     <% @songs.each do |song| %>
-      <div class="song-conatainer selected">
+      <div class="song-conatainer selected" id="anchor-<%= song.id %>">
         <div class="title">
-          <h3 id="<%= song.id %>">
+          <h3>
             <i class="fas fa-compact-disc"></i>
             <%= song.title %>
           </h3>
@@ -36,3 +33,4 @@
       </div>
     <% end %>
   </div>
+</div>

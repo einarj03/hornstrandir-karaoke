@@ -1,0 +1,30 @@
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0px 1px 5px 1px rgba(0,0,0,0.05);
+  height: 50px;
+  margin: 0;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 30px;
+
+  ul.nav {
+    margin: 0;
+    padding: 0;
+    // display: flex;
+    // align-items: center;
+    .nav-item {
+      display: inline;
+      float: left;
+      a {
+        display: block;
+        padding: 1.5rem;
+        font-size: 1.5rem;
+        text-decoration: none;
+        color: #000;
+      }
+    }
+  }
+}

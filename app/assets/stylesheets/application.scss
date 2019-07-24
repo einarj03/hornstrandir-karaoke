@@ -14,3 +14,13 @@
  *= require_self
  */
 @import 'components/index';
+
+html {
+  font-size: 0.8em;
+}
+
+@media (min-width: 780px) {
+  html {
+    font-size: 1em;
+  }
+}

@@ -4,16 +4,20 @@
     <title>SongLyrics</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
+    <%= favicon_link_tag asset_path('favicon.png') %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/all.css">
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
     <div class="page-wrapper">
+      <%= render 'shared/navbar' %>
       <%= yield %>
       <%= render 'shared/footer' %>
     </div>
+    <%= javascript_pack_tag 'application' %>
   </body>
 </html>

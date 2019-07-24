@@ -57,6 +57,7 @@ body {
 
 .song-buttons {
   display: flex;
+  flex-wrap: wrap;
   padding-top: $navbar-height;
   margin-top: -$navbar-height;
 }
@@ -80,11 +81,11 @@ body {
 }
 
 .btn.btn-primary {
-  font-size: 2rem;
+  font-size: 1rem;
   color: white;
   background-color: black;
   padding: 1rem 1rem;
-  margin: 2rem 1rem;
+  margin: 0.5rem 0.5rem;
   border-radius: 5px;
   text-decoration: none;
 }

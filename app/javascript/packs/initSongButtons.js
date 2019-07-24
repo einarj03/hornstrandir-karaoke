@@ -6,7 +6,7 @@ const initSongButtons = () => {
       event.preventDefault();
       const instructions = document.querySelector('.instructions');
       instructions.classList.add('hidden');
-      songContainers.forEach(hideSongContainer)
+      songContainers.forEach(hideSongContainer);
       const selected = document.getElementById(event.target.attributes.href.value.slice(1));
       selected.classList.add('selected');
     });

@@ -1,0 +1,16 @@
+<h1>
+  Karaoke
+  <i class="fas fa-microphone"></i>
+</h1>
+<ul>
+  <% @songs.each do |song| %>
+    <li>
+      <%= link_to song.title, "##{song.id}" %>
+    </li>
+  <% end %>
+</ul>
+
+<% @songs.each do |song| %>
+  <h3 id="<%= song.id %>"><%= song.title %></h3>
+  <p><%= song.lyrics %></p>
+<% end %>

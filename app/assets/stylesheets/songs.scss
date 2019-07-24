@@ -1,6 +1,87 @@
 // Place all the styles related to the songs controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+body {
+  margin: 0;
+  font-family: monospace;
+}
+
+.page-wrapper {
+  display: flex;
+  justify-content: space-around;
+  position: relative;
+}
+
+.page-container {
+  width: 80%;
+}
+
+.title {
+  padding: 1rem 6rem;
+  background-color: black;
+  margin: 0 -12.5%;
+  color: white;
+  h3 {
+    font-size: 3rem;
+  }
+  h4 {
+    font-size: 2rem;
+  }
+}
+
+.song-buttons {
+  display: flex;
+}
+
+.song-conatainer {
+  display: none;
+  padding-bottom: 3rem;
+  &.selected {
+    display: block;
+  }
+}
+
+.btn.btn-primary {
+  font-size: 2rem;
+  color: white;
+  background-color: black;
+  padding: 1rem 1rem;
+  margin: 2rem 1rem;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.lyrics-container {
+  display: flex;
+  .lyrics-icon-container {
+    // width: 20px;
+    font-size: 3rem;
+    padding: 3rem 2rem;
+  }
+}
+
 p {
   white-space: pre-line;
+  font-size: 2rem;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  li {
+    display: inline;
+    font-size: 2rem;
+    color: white;
+    background-color: black;
+    padding: 1rem 1rem;
+    margin: 2rem 1rem;
+    border-radius: 5px;
+    a {
+      text-decoration: none;
+      color: white;
+      &:hover {
+
+      }
+    }
+  }
 }

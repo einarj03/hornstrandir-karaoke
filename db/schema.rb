@@ -10,16 +10,26 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_07_24_094755) do
+ActiveRecord::Schema.define(version: 2019_07_24_112631) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "lyric_partials", force: :cascade do |t|
+    t.bigint "song_id"
+    t.text "text"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["song_id"], name: "index_lyric_partials_on_song_id"
+  end
 
   create_table "songs", force: :cascade do |t|
     t.string "title"
     t.text "lyrics"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "artist"
   end
 
+  add_foreign_key "lyric_partials", "songs"
 end

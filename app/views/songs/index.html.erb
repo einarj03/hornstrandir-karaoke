@@ -1,16 +1,38 @@
-<h1>
-  Karaoke
-  <i class="fas fa-microphone"></i>
-</h1>
-<ul>
-  <% @songs.each do |song| %>
-    <li>
-      <%= link_to song.title, "##{song.id}" %>
-    </li>
-  <% end %>
-</ul>
+  <div class="page-container">
+    <h1>
+      Karaoke
+      <i class="fas fa-microphone"></i>
+    </h1>
+    <div class="song-buttons">
+      <% @songs.each do |song| %>
+          <%= link_to "##{song.id}", class: "btn btn-primary" do %>
+            <%= song.title %>
+          <% end %>
+      <% end %>
+    </div>
 
-<% @songs.each do |song| %>
-  <h3 id="<%= song.id %>"><%= song.title %></h3>
-  <p><%= song.lyrics %></p>
-<% end %>
+    <% @songs.each do |song| %>
+      <div class="song-conatainer selected">
+        <div class="title">
+          <h3 id="<%= song.id %>">
+            <i class="fas fa-compact-disc"></i>
+            <%= song.title %>
+          </h3>
+          <h4>
+            <i class="fas fa-microphone"></i>
+            <%= song.artist %>
+          </h4>
+        </div>
+        <div class="lyrics-container">
+          <div class="lyrics-icon-container">
+            <i class="fas fa-align-left"></i>
+          </div>
+          <div class="lyrics">
+            <% song.lyric_partials.each do |lyric_partial| %>
+              <p><%= lyric_partial.text %></p>
+            <% end %>
+          </div>
+        </div>
+      </div>
+    <% end %>
+  </div>

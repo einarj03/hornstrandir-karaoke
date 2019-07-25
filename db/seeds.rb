@@ -1297,6 +1297,54 @@ Loksins ég fann þig líka þú sást mig ljóminn úr brúnu augunum sk
       ó sem betur fer.
       Og sem betur fer og sem betur fer þá fann ég þig hér.
       Og sem betur fer og sem betur fer þá fann ég þig hér"
+    ],
+    "Gordjöss": [
+      "Líkt og fuglinn Fönix rís
+      Fögur lítil diskódís
+      Upp úr djúpinu
+      Gegnum diskóljósafoss
+      Ég er flottur,
+      Ég er frægur
+      Ég er kandís kandífloss",
+      "Söngröddin er silkimjúk
+      Sjáið bara þennan búk
+      Instant klassík
+      Hér er allt á réttum stað
+      Ég er fagur, ég er fríður,
+      Ég er glamúr gúmmelað",
+      "Það geta' ekki allir verið gordjöss
+      Það geta' ekki allir verið töff
+      Það geta' ekki allir orðið fabjúlöss
+      Eins og ég",
+      "Það geta' ekki allir verið gordjöss
+      Það geta' ekki allir meikað' það
+      Eins og ég",
+      "Húðinni í Díor drekkt,
+      Dressið óaðfinnanlegt hvílík fegurð
+      Hvað get ég sagt?
+      Ég er dúndur, ég er diskó,
+      Það er mikið í mig lagt",
+      "Það geta' ekki allir verið gordjöss
+      Það geta' ekki allir verið töff
+      Það geta' ekki allir orðið fabjúlöss
+      Eins og ég",
+      "Það geta' ekki allir verið gordjöss
+      Það geta' ekki allir meikað' það
+      Eins og ég",
+      "Það geta' ekki allir verið gordjöss
+      Það geta' ekki allir verið hit
+      Það geta' ekki allir verið fabjúlöss
+      Eins og ég",
+      "Það geta' ekki allir verið gordjöss
+      Það geta' ekki allir meikað' það
+      Eins og ég",
+      "Það geta' ekki allir verið gordjöss
+      Það geta' ekki allir verið töff
+      Það geta' ekki allir orðið fabjúlöss
+      Eins og ég",
+      "Það geta' ekki allir verið gordjöss
+      Það geta' ekki allir meikað' það
+      Eins og ég"
     ]
   },
   "xx": {

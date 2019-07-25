@@ -32,7 +32,7 @@
             <i class="fas fa-align-left"></i>
           </div>
           <div class="lyrics">
-            <% song.lyric_partials.each do |lyric_partial| %>
+            <% song.lyric_partials.order('created_at ASC').each do |lyric_partial| %>
               <p><%= lyric_partial.text %></p>
             <% end %>
           </div>

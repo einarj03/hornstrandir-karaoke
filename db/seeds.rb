@@ -1158,7 +1158,7 @@ SONGS = {
     ]
   },
   "Friðrik Dór": {
-    "i sidasta skipti": [
+    "Í síðasta skipti": [
       "Ég man það svo vel
       Manstu það hvernig ég sveiflaði þér
       Fram og tilbaka í örmunum á mér
@@ -1189,7 +1189,7 @@ SONGS = {
       Þá rata ég út"
     ]
   },
-  "KK": {
+  "K.K.": {
     "Vegbúi": [
       "Þú færð aldrei að gleyma
       þegar ferðu á stjá
@@ -1871,8 +1871,8 @@ og rækta nýjan skóg."
       Mouth is alive"
     ]
   },
-  "PARÍS NORÐURSINS": {
-    "PRINS PÓLÓ": [
+  "París Norðursins": {
+    "Prins Póló": [
       "Fögur fyrirheit á blússandi siglingu
       á ullarnærfötum í grenjandi rigningu
       stími heim í heiðardalinn
